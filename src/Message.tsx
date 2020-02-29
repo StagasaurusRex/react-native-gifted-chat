@@ -158,10 +158,6 @@ export default class Message<
       return null
     }
 
-    if (currentMessage && currentMessage.user && currentMessage.user.avatar === null) {
-      return null
-    }
-
     const { containerStyle, ...props } = this.props
     return <Avatar {...props} />
   }
